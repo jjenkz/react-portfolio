@@ -1,14 +1,12 @@
-// Skills icons - https://icon-sets.iconify.design/
 import { Icon } from "@iconify/react";
 
-// Navbar Logo image (add your image to the src/images directory and uncomment the line below to import your image)
+// Navbar Logo image (add image to the src/images directory and uncomment the line below to import image)
 // import newLogo from "./images/yourFileName"
 
-// Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 
-// Projects Images (add your images to the images directory and import below)
+// Projects Images (add images to the images directory and import below)
 import Logo from "./images/logo.svg";
 
 export const githubUsername = "jjenkz";
@@ -73,7 +71,6 @@ export const skillData = [
   },
 ];
 
-// Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 export const resume = "https://jake-jenkins.tiiny.site";
 
 export const filteredProjects = [
@@ -82,7 +79,7 @@ export const filteredProjects = [
   "text-editor",
   "readme-generator",
   "e-commerce-back-end",
-  "socail-network-api",
+  "social-network-api",
 ];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
