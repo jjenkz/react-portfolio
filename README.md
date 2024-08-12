@@ -29,4 +29,16 @@ This React web app features the following:
 
 ## Usage
 
-Simply clone down from the (GitHub repo)[https://github.com/jjenkz/portfolio-react], install the packages with `npm i` and finally run it with `npm run start`
+Simply clone down from the [GitHub repo](https://github.com/jjenkz/portfolio-react), install the packages with `npm i` and finally run it with `npm run start`
+
+## License
+
+This web app is under the MIT license.
+
+## Link
+
+(React Portfolio)[]
+
+## Questions
+
+Any questions feel free to [email](j_jenkins1@u.pacific.edu) or contact me through the portfolio.
