@@ -6,6 +6,7 @@ import { StaleWhileRevalidate } from "workbox-strategies";
 
 clientsClaim();
 
+/* eslint-disable-next-line no-restricted-globals */
 precacheAndRoute(self.__WB_MANIFEST || []); // Handle case where __WB_MANIFEST might be undefined
 
 const indexURL = "/index.html";
@@ -25,7 +26,8 @@ registerRoute(({ request, url }) => {
 
 registerRoute(
   ({ url }) => {
-    const workerOrigin = window.location.origin;
+    /* eslint-disable-next-line no-restricted-globals */
+    const workerOrigin = self.location.origin;
     return (
       (url.origin === workerOrigin && url.pathname.endsWith(".png")) ||
       (url.origin === workerOrigin && url.pathname.endsWith(".svg")) ||
@@ -38,8 +40,10 @@ registerRoute(
   })
 );
 
-window.addEventListener("message", (event) => {
+/* eslint-disable-next-line no-restricted-globals */
+self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
-    window.skipWaiting();
+    /* eslint-disable-next-line no-restricted-globals */
+    self.skipWaiting();
   }
 });
