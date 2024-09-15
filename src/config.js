@@ -21,7 +21,7 @@ export { HeroLight as Light };
 export { HeroDark as Dark };
 
 export const moreInfo =
-  "I'm an ex-baseball player who always had a passion for problem solving. After one love of mine ended (baseball career), another one came into my life(software development and programming) and I am dedicated to make this one last longer than my previous love.";
+  "I'm an ex-baseball player and Division I athlete who always had a passion for problem solving. After one love of mine ended (baseball career), another one came into my life(software development and programming) and I am dedicated to make this one last longer than my previous love.";
 
 export const skillData = [
   {
